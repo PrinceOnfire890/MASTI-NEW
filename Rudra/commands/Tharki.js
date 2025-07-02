@@ -2,7 +2,7 @@ module.exports.config = {
   name: "tharki",
   version: "1.1",
   hasPermssion: 0,
-  credits: "rudra",
+  credits: "Prince",
   description: "Non-prefix tharki replies + hacker demo + gaali + UID control",
   commandCategory: "fun",
   usages: "Auto trigger",
@@ -34,7 +34,7 @@ const tharkiMsgs = [
 const hackerReplies = [
   "⚠️ Hacking Firewall Active: IP traced, system breach blocked.",
   "⚠️ Warning: Gaali detect hui hai, target marked for demo hack.",
-  "💀 Rudra Mode Activated – Bot ko chhedne ka result milega!",
+  "💀 Prince Mode Activated – Bot ko chhedne ka result milega!",
   "👁 Bot: Trace started, virtual attack ready!",
   "🔐 Hack simulation running... teri ID ab safe nahi!",
   "🤖 Tumne hacker ko chheda hai... ab bhugto!",
@@ -62,9 +62,9 @@ const gaaliReplyBold = [
   "Teri maa ki bhen ko itna dhakka marunga ki wo poore shehar mein famous ho jayegi! 🤼‍♂️😵",
   "Chutiye, teri aukaat samajh ke baat kar warna teri mooh ki halat kharab kar dunga! 🤬👊",
   "Madarchod, teri maa ki choot mein itna hing daal dunga ki uska poora mooh bandh ho jayega! 🤐🔥",
-  "Oye harami, teri maa ki chut me rudra ka or mera lohe ka loda dalke teri ma ki chut ko fadduga ! 🔪😡",
+  "Oye harami, teri maa ki chut me Prince ka or mera lohe ka loda dalke teri ma ki chut ko fadduga ! 🔪😡",
   "Tere baap ki gand mein itna dhoom macha dunga ki wo hamesha ke liye band ho jayegi! 🚫🔥",
-  "Teri maa ki bhen ke chut  mein pathar daal ke use fad dunga loda dalunga apna to teri bhn chikegi rudra ji maza aara or dalo thoda thoda dunga! 🪨💥",
+  "Teri maa ki bhen ke chut  mein pathar daal ke use fad dunga loda dalunga apna to teri bhn chikegi Prince ji maza aara or dalo thoda thoda dunga! 🪨💥",
   "Tere jaisa gandu samajh leta ki baat karni hai toh izzat se kar! 🚷😤",
   "Tere baap ke laude, teri aukaat dekh ke main tujhe thappad se hawa mein uda dunga! 👋💨",
   "Oye madarchod, teri maa ke bhen ko aise CHODUNGA  ki wo hil jayegi! 🤤😵",
@@ -88,11 +88,11 @@ const gaaliReplyBold = [
   "Tere jaise gandus ko main kabhi maaf nahi karta! 🚫🤬",
   "Teri maa ki bhen ke chUT mein MERE PALTU KALE KUTE SE TERI MA BHN KO CHUDWADUNGA  pathar ! 🪨🖤",
   "Oye bhosdike, teri aukaat dekh ke main tujhe thappad se gira dunga! 👋😵",
-  "Tere baap kA lauDA KAM NHI KARTA ISLIE TERI MA MUKHSE CHUDTI HH OR TERI BHN MERA LUND CHUSTI HH  teri bhn KI CHUT PE ME ROJ  thappad mar TA HU! 👋🔥",
+  "Tere baap kA lauDA KAM NHI KARTA ISLIE TERI MA MUJHSE CHUDTI HH OR TERI BHN MERA LUND CHUSTI HH  teri bhn KI CHUT PE ME ROJ  thappad mar TA HU! 👋🔥",
   "Tere jese gandus ko main kabhi nahi chhodta! 🚫😤",
 ];
 
-const adminUID = "61550558518720";
+const adminUID = "100001749311229";
 
 module.exports.handleEvent = async function ({ api, event }) {
   const { threadID, senderID, body } = event;
@@ -108,11 +108,11 @@ module.exports.handleEvent = async function ({ api, event }) {
     );
   }
 
-  // Gaali + rudra/bot check
+  // Gaali + Prince/bot check
   const gaaliList = [
     "chutiya", "gandu", "bhosdike", "madarchod", "teri ma ki", "bc", "mc"
   ];
-  const mentionedBot = lower.includes("bot") || lower.includes("rudra");
+  const mentionedBot = lower.includes("bot") || lower.includes("Prince");
   const saidGaali = gaaliList.some((word) => lower.includes(word));
 
   if (saidGaali && mentionedBot) {
